@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "reviewed_by": "independent-final-visual-qa",
+  "directions": [
+    {"direction":"000","verdict":"pass","expected":"up","observed":"up","reason":"Eyes clearly look upward."},
+    {"direction":"022.5","verdict":"pass","expected":"up-right","observed":"up-right","reason":"Horizontal eye cue points right and vertical eye cue points up."},
+    {"direction":"045","verdict":"pass","expected":"up-right","observed":"up-right","reason":"Face and eyes point right while the gaze remains upward."},
+    {"direction":"067.5","verdict":"pass","expected":"up-right","observed":"up-right","reason":"Head turn reads right and the gaze reads up."},
+    {"direction":"090","verdict":"pass","expected":"right","observed":"right","reason":"Face and eyes clearly point screen-right."},
+    {"direction":"112.5","verdict":"pass","expected":"down-right","observed":"down-right","reason":"Horizontal eye cue points right and vertical eye cue points down."},
+    {"direction":"135","verdict":"pass","expected":"down-right","observed":"down-right","reason":"Face points right and eyes point down."},
+    {"direction":"157.5","verdict":"pass","expected":"down-right","observed":"down-right","reason":"Gaze points right while head and eyes angle down."},
+    {"direction":"180","verdict":"pass","expected":"down","observed":"down","reason":"Eyes and head clearly point downward."},
+    {"direction":"202.5","verdict":"pass","expected":"down-left","observed":"down-left","reason":"Horizontal eye cue points left and vertical eye cue points down."},
+    {"direction":"225","verdict":"pass","expected":"down-left","observed":"down-left","reason":"Face and eyes point left while the gaze remains downward."},
+    {"direction":"247.5","verdict":"pass","expected":"down-left","observed":"down-left","reason":"Gaze points left and down."},
+    {"direction":"270","verdict":"pass","expected":"left","observed":"left","reason":"Face and eyes clearly point screen-left."},
+    {"direction":"292.5","verdict":"pass","expected":"up-left","observed":"up-left","reason":"Horizontal eye cue points left and vertical eye cue points up."},
+    {"direction":"315","verdict":"pass","expected":"up-left","observed":"up-left","reason":"Gaze points left and up."},
+    {"direction":"337.5","verdict":"pass","expected":"up-left","observed":"up-left","reason":"Eyes point left while the gaze remains upward."}
+  ],
+  "review_warnings": [
+    "Jumping stable slots are accepted as stable and unclipped.",
+    "Continuity and alpha-hole metric warnings are accepted because no visible snap, seam, or broken silhouette remains."
+  ]
+}

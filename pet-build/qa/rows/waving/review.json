@@ -1,0 +1,82 @@
+{
+  "ok": true,
+  "frames_root": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\waving\\frames",
+  "states": [
+    "waving"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "waving",
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\waving\\frames\\waving\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26715,
+          "bbox": [
+            9,
+            5,
+            182,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 230
+        },
+        {
+          "index": 1,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\waving\\frames\\waving\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26353,
+          "bbox": [
+            10,
+            5,
+            181,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 211
+        },
+        {
+          "index": 2,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\waving\\frames\\waving\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26712,
+          "bbox": [
+            8,
+            5,
+            184,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 208
+        },
+        {
+          "index": 3,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\waving\\frames\\waving\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26343,
+          "bbox": [
+            11,
+            5,
+            181,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 211
+        }
+      ]
+    }
+  ]
+}

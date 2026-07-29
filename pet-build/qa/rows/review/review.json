@@ -1,0 +1,112 @@
+{
+  "ok": true,
+  "frames_root": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\review\\frames",
+  "states": [
+    "review"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "review",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\review\\frames\\review\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 27190,
+          "bbox": [
+            6,
+            5,
+            186,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 278
+        },
+        {
+          "index": 1,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\review\\frames\\review\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 27558,
+          "bbox": [
+            7,
+            5,
+            185,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 303
+        },
+        {
+          "index": 2,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\review\\frames\\review\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 24577,
+          "bbox": [
+            5,
+            12,
+            187,
+            196
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 290
+        },
+        {
+          "index": 3,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\review\\frames\\review\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26373,
+          "bbox": [
+            8,
+            5,
+            183,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 302
+        },
+        {
+          "index": 4,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\review\\frames\\review\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26875,
+          "bbox": [
+            8,
+            5,
+            184,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 304
+        },
+        {
+          "index": 5,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\review\\frames\\review\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 27024,
+          "bbox": [
+            7,
+            5,
+            185,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 326
+        }
+      ]
+    }
+  ]
+}

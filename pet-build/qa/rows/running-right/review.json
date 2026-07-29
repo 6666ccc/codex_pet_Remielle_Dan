@@ -1,0 +1,142 @@
+{
+  "ok": true,
+  "frames_root": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running-right\\frames",
+  "states": [
+    "running-right"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "running-right",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running-right\\frames\\running-right\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26663,
+          "bbox": [
+            7,
+            5,
+            184,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 409
+        },
+        {
+          "index": 1,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running-right\\frames\\running-right\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 25112,
+          "bbox": [
+            6,
+            5,
+            185,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 395
+        },
+        {
+          "index": 2,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running-right\\frames\\running-right\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 23621,
+          "bbox": [
+            9,
+            5,
+            182,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 453
+        },
+        {
+          "index": 3,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running-right\\frames\\running-right\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 23032,
+          "bbox": [
+            14,
+            5,
+            178,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 370
+        },
+        {
+          "index": 4,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running-right\\frames\\running-right\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 25029,
+          "bbox": [
+            9,
+            5,
+            183,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 403
+        },
+        {
+          "index": 5,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running-right\\frames\\running-right\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 23321,
+          "bbox": [
+            9,
+            5,
+            182,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 339
+        },
+        {
+          "index": 6,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running-right\\frames\\running-right\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26015,
+          "bbox": [
+            5,
+            7,
+            187,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 429
+        },
+        {
+          "index": 7,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running-right\\frames\\running-right\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 24502,
+          "bbox": [
+            11,
+            5,
+            181,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 446
+        }
+      ]
+    }
+  ]
+}

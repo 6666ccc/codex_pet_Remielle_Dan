@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#00FF00",
+    "rgb": [
+      0,
+      255,
+      0
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "running",
+      "frames": [
+        "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\00.png",
+        "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\01.png",
+        "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\02.png",
+        "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\03.png",
+        "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\04.png",
+        "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\05.png"
+      ],
+      "method": "components"
+    }
+  ]
+}

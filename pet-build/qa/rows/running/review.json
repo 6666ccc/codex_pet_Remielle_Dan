@@ -1,0 +1,112 @@
+{
+  "ok": true,
+  "frames_root": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames",
+  "states": [
+    "running"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "running",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26769,
+          "bbox": [
+            10,
+            5,
+            182,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 280
+        },
+        {
+          "index": 1,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26431,
+          "bbox": [
+            11,
+            5,
+            181,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 293
+        },
+        {
+          "index": 2,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26452,
+          "bbox": [
+            11,
+            5,
+            181,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 290
+        },
+        {
+          "index": 3,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26231,
+          "bbox": [
+            11,
+            5,
+            181,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 310
+        },
+        {
+          "index": 4,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26777,
+          "bbox": [
+            9,
+            5,
+            182,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 307
+        },
+        {
+          "index": 5,
+          "file": "D:\\\u5218\u7545\\22\\\u8868\u60c5\u5305\\\u8868\u60c5\u5305\\xingyu-pet-run\\qa\\rows\\running\\frames\\running\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 26600,
+          "bbox": [
+            9,
+            5,
+            183,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 281
+        }
+      ]
+    }
+  ]
+}

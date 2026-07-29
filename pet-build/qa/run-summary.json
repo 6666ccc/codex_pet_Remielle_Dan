@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "run_dir": "D:\\刘畅\\22\\表情包\\表情包\\xingyu-pet-run",
+  "spritesheet": "D:\\刘畅\\22\\表情包\\表情包\\xingyu-pet-run\\final\\spritesheet-extended.webp",
+  "validation": "D:\\刘畅\\22\\表情包\\表情包\\xingyu-pet-run\\final\\validation-extended.json",
+  "chroma_despill": "D:\\刘畅\\22\\表情包\\表情包\\xingyu-pet-run\\qa\\chroma-despill-extended.json",
+  "contact_sheet": "D:\\刘畅\\22\\表情包\\表情包\\xingyu-pet-run\\qa\\contact-sheet-extended.png",
+  "direction_sheet": "D:\\刘畅\\22\\表情包\\表情包\\xingyu-pet-run\\qa\\look-directions.png",
+  "direction_semantics": "D:\\刘畅\\22\\表情包\\表情包\\xingyu-pet-run\\qa\\direction-semantics.json",
+  "blind_direction_validation": "D:\\刘畅\\22\\表情包\\表情包\\xingyu-pet-run\\qa\\direction-blind-validation.json",
+  "blind_review_resolution": null,
+  "continuity": "D:\\刘畅\\22\\表情包\\表情包\\xingyu-pet-run\\qa\\look-continuity.json",
+  "review": "D:\\刘畅\\22\\表情包\\表情包\\xingyu-pet-run\\qa\\review.json",
+  "package": "C:\\Users\\liuch\\.codex\\pets\\xingyu"
+}
