@@ -1,6 +1,6 @@
-# Codex 蕾米埃尔宠物
+# 蕾米埃尔宠物（Codex + Clawd on Desk）
 
-基于官方 GIF 图源制作的 Codex v2 自定义宠物「蕾米埃尔」。角色形象保留粉发、星形发饰、小翅膀与设备道具。
+基于官方 GIF 图源制作的自定义宠物「蕾米埃尔」。本仓库同时保留 Codex v2 专用版本和适用于 Clawd on Desk 的高帧 GIF 版本；角色形象保留粉发、星形发饰、小翅膀与设备道具。
 
 ## 状态映射
 
@@ -31,9 +31,12 @@ Codex v2 自定义宠物图集规定每个标准动作只能使用固定的 8 �
 - `codex-pet/`：可直接安装的 Codex 宠物包，含 `pet.json` 与 `spritesheet.webp`。
 - `pet-build/`：完整构建过程文件、动作行、提示词、质量检查结果与最终精灵图。
 - `source-images/`：六张原始 GIF 图源及参考拼图。
+- `xingyu-clawd-theme/`：可直接安装的 Clawd on Desk 主题，保留高帧 GIF，并包含左右移动、鼠标互动、错误反馈和完整睡眠流程。
 - `codex-pet.html`：本地预览页面。
 
 ## 安装
+
+### Codex
 
 将 `codex-pet/` 中的文件复制到：
 
@@ -42,3 +45,13 @@ Codex v2 自定义宠物图集规定每个标准动作只能使用固定的 8 �
 ```
 
 然后重启 Codex。该宠物使用 v2 图集格式（8 列 × 11 行，1536 × 2288）。
+
+### Clawd on Desk
+
+将整个 `xingyu-clawd-theme/` 目录复制到：
+
+```text
+%APPDATA%\clawd-on-desk\themes\xingyu-clawd-theme\
+```
+
+然后重启 Clawd on Desk，并在“设置 → Theme”中选择“蕾米埃尔 · Clawd”。
