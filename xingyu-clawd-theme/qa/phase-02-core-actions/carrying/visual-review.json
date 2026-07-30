@@ -1,0 +1,7 @@
+{
+  "visual_qa": "pass",
+  "qa_note": "#00-#03接触抬起、#04-#09负重搬运及#10-#13下降放平连贯，箱体透视、把手与双手关系稳定，无瞬移漂浮变形；首尾衔接自然，身份、基线、边缘和裁切通过，GIF为16帧、140ms/帧、无限循环。",
+  "repair_needed": "none",
+  "approved_asset": "approved/carrying.gif",
+  "sha256": "5a5ca05c9b1d98a1061f1a25a96c68d8557f0394fb8705d029d83d867368d7b8"
+}

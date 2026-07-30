@@ -11,9 +11,14 @@ OUTPUT = ROOT / "qa" / "theme-contact-sheet.png"
 MOTION_OUTPUT = ROOT / "qa" / "motion-samples.png"
 FILES = [
     "idle-loop.gif",
+    "idle-look.gif",
+    "idle-reading.gif",
     "thinking.gif",
     "editing.gif",
+    "update-checking.gif",
     "notification.gif",
+    "sweeping.gif",
+    "carrying.gif",
     "error.gif",
     "attention.gif",
     "roam.gif",
@@ -62,7 +67,17 @@ def main() -> None:
     sheet.save(OUTPUT)
     print(f"wrote {OUTPUT}")
 
-    motion_files = ["roam.gif", "drag-left.gif", "sleeping.gif"]
+    motion_files = [
+        "roam.gif",
+        "drag-left.gif",
+        "idle-look.gif",
+        "idle-reading.gif",
+        "update-checking.gif",
+        "notification.gif",
+        "sweeping.gif",
+        "carrying.gif",
+        "sleeping.gif",
+    ]
     sample_count = 6
     motion_sheet = Image.new(
         "RGB",

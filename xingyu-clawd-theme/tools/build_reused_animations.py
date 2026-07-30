@@ -6,7 +6,7 @@ independent Clawd theme on a shared 360x360 transparent canvas.
 
 from pathlib import Path
 
-from PIL import Image, ImageOps
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,7 +19,6 @@ ATLAS_PATH = next(
     ATLAS_CANDIDATES[0],
 )
 ERROR_SOURCE = ROOT / "generated" / "error-alpha.png"
-MOVE_SHEET = ROOT / "generated" / "move-16-sheet-alpha.png"
 SLEEP_SHEET = ROOT / "generated" / "sleep-16-sheet-alpha.png"
 ASSETS = ROOT / "assets"
 
@@ -116,24 +115,13 @@ def main() -> None:
     with Image.open(ATLAS_PATH) as opened:
         atlas = opened.convert("RGBA")
 
-    run_right = atlas_row(atlas, 1, 8)
-    run_left = atlas_row(atlas, 2, 8)
     waving = atlas_row(atlas, 3, 4)
     jumping = atlas_row(atlas, 4, 5)
     failed = atlas_row(atlas, 5, 8)
 
-    if MOVE_SHEET.exists():
-        smooth_right = generated_sheet_frames(MOVE_SHEET)
-        smooth_left = [ImageOps.mirror(frame) for frame in smooth_right]
-    else:
-        smooth_right = run_right
-        smooth_left = run_left
-    smooth_move_durations = [65] * len(smooth_right)
-    save_gif("roam.gif", smooth_right, smooth_move_durations)
-    save_gif("drag-right.gif", smooth_right, smooth_move_durations)
-    save_gif("drag-left.gif", smooth_left, smooth_move_durations)
-    save_gif("click-right.gif", smooth_right, smooth_move_durations)
-    save_gif("click-left.gif", smooth_left, smooth_move_durations)
+    # Locomotion is built by build_movement_animations.py. Keeping it out of
+    # this mixed-purpose rebuild prevents later phases from overwriting the
+    # approved movement timing, registration, or click-reaction assets.
     save_gif(
         "react-double.gif",
         jumping,

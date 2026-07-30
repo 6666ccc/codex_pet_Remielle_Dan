@@ -1,0 +1,28 @@
+{
+  "phase": "phase-05-idle-update",
+  "status": "complete",
+  "completed_at": "2026-07-31T02:19:00+08:00",
+  "policy": "one_generation_then_integrate",
+  "assets": {
+    "idle-look": "built",
+    "idle-reading": "built",
+    "update-checking": "built"
+  },
+  "deployment": "complete",
+  "theme_version": "0.5.0",
+  "subjective_qa": "disabled_by_user_request",
+  "mechanical_checks": {
+    "file_decodes": true,
+    "frame_count": 16,
+    "canvas": [360, 360],
+    "loop": 0,
+    "theme_asset_references": 23,
+    "missing_theme_assets": 0,
+    "installed_hash_match": true
+  },
+  "sha256": {
+    "idle-look.gif": "0e5b176f7ddaf7fdc03bb71a4ebdae24dc0040fb23e01d0277a652639f89ba52",
+    "idle-reading.gif": "dd9855b7b2c5ae711bb02aa0600f0309e69758cfc33c559a6666e15022acbcbb",
+    "update-checking.gif": "e9dc093bd55bd608a381d61bf7476cb7b0a54c0c0c9f307579ca3a8a2e8f126b"
+  }
+}

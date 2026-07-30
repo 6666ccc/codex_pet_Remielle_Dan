@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "name": "蕾米埃尔 · Clawd",
   "author": "刘畅",
-  "version": "0.3.0",
-  "description": "基于原始高帧 GIF 制作的独立 Clawd on Desk 主题。",
+  "version": "0.5.1",
+  "description": "包含高帧状态、随机待机与更新检查动画的 Clawd on Desk 主题。",
   "viewBox": { "x": 0, "y": 0, "width": 120, "height": 120 },
   "layout": {
     "contentBox": { "x": 8, "y": 5, "width": 104, "height": 110 },
@@ -29,9 +29,18 @@
     "collapsing": ["collapsing.gif"],
     "attention": ["attention.gif"],
     "notification": ["notification.gif"],
+    "sweeping": ["sweeping.gif"],
+    "carrying": ["carrying.gif"],
     "error": ["error.gif"],
     "sleeping": ["sleeping.gif"],
     "waking": ["waking.gif"]
+  },
+  "idleAnimations": [
+    { "file": "idle-look.gif", "duration": 6500 },
+    { "file": "idle-reading.gif", "duration": 10000 }
+  ],
+  "updateVisuals": {
+    "checking": "update-checking.gif"
   },
   "reactions": {
     "drag": {
@@ -45,6 +54,16 @@
     "double": { "files": ["react-double.gif"], "duration": 2800 }
   },
   "timings": {
+    "minDisplay": {
+      "notification": 5000,
+      "sweeping": 5500,
+      "carrying": 3000
+    },
+    "autoReturn": {
+      "notification": 5000,
+      "sweeping": 300000,
+      "carrying": 3000
+    },
     "mouseIdleTimeout": 20000,
     "mouseSleepTimeout": 60000,
     "yawnDuration": 1800,

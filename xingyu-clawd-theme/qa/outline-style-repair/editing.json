@@ -1,0 +1,276 @@
+{
+  "source": "D:\\刘畅\\22\\表情包\\表情包\\codex蕾米埃尔\\xingyu-clawd-theme\\assets\\editing.gif",
+  "output": "D:\\刘畅\\22\\表情包\\表情包\\codex蕾米埃尔\\xingyu-clawd-theme\\assets\\editing.gif",
+  "frame_count": 17,
+  "durations_ms": [
+    70,
+    60,
+    70,
+    70,
+    60,
+    70,
+    70,
+    60,
+    70,
+    70,
+    60,
+    70,
+    70,
+    60,
+    70,
+    70,
+    70
+  ],
+  "loop": 0,
+  "canvas": [
+    360,
+    360
+  ],
+  "algorithm": {
+    "name": "transparent-boundary light-matte removal",
+    "luminance_threshold": 140.0,
+    "passes": 2,
+    "neighborhood": "3x3"
+  },
+  "total_removed_pixels": 25010,
+  "frames": [
+    {
+      "index": 0,
+      "removed_pixels": 1362,
+      "before": {
+        "edge_pixels": 1284,
+        "dark_edge_pixels": 15,
+        "dark_edge_ratio": 0.0117
+      },
+      "after": {
+        "edge_pixels": 1281,
+        "dark_edge_pixels": 1022,
+        "dark_edge_ratio": 0.7978
+      }
+    },
+    {
+      "index": 1,
+      "removed_pixels": 1771,
+      "before": {
+        "edge_pixels": 1448,
+        "dark_edge_pixels": 13,
+        "dark_edge_ratio": 0.009
+      },
+      "after": {
+        "edge_pixels": 1510,
+        "dark_edge_pixels": 1120,
+        "dark_edge_ratio": 0.7417
+      }
+    },
+    {
+      "index": 2,
+      "removed_pixels": 1382,
+      "before": {
+        "edge_pixels": 1303,
+        "dark_edge_pixels": 15,
+        "dark_edge_ratio": 0.0115
+      },
+      "after": {
+        "edge_pixels": 1267,
+        "dark_edge_pixels": 1006,
+        "dark_edge_ratio": 0.794
+      }
+    },
+    {
+      "index": 3,
+      "removed_pixels": 1525,
+      "before": {
+        "edge_pixels": 1443,
+        "dark_edge_pixels": 13,
+        "dark_edge_ratio": 0.009
+      },
+      "after": {
+        "edge_pixels": 1406,
+        "dark_edge_pixels": 1152,
+        "dark_edge_ratio": 0.8193
+      }
+    },
+    {
+      "index": 4,
+      "removed_pixels": 1364,
+      "before": {
+        "edge_pixels": 1253,
+        "dark_edge_pixels": 11,
+        "dark_edge_ratio": 0.0088
+      },
+      "after": {
+        "edge_pixels": 1213,
+        "dark_edge_pixels": 984,
+        "dark_edge_ratio": 0.8112
+      }
+    },
+    {
+      "index": 5,
+      "removed_pixels": 1505,
+      "before": {
+        "edge_pixels": 1400,
+        "dark_edge_pixels": 11,
+        "dark_edge_ratio": 0.0079
+      },
+      "after": {
+        "edge_pixels": 1371,
+        "dark_edge_pixels": 1114,
+        "dark_edge_ratio": 0.8125
+      }
+    },
+    {
+      "index": 6,
+      "removed_pixels": 1311,
+      "before": {
+        "edge_pixels": 1221,
+        "dark_edge_pixels": 12,
+        "dark_edge_ratio": 0.0098
+      },
+      "after": {
+        "edge_pixels": 1192,
+        "dark_edge_pixels": 952,
+        "dark_edge_ratio": 0.7987
+      }
+    },
+    {
+      "index": 7,
+      "removed_pixels": 1497,
+      "before": {
+        "edge_pixels": 1391,
+        "dark_edge_pixels": 11,
+        "dark_edge_ratio": 0.0079
+      },
+      "after": {
+        "edge_pixels": 1354,
+        "dark_edge_pixels": 1108,
+        "dark_edge_ratio": 0.8183
+      }
+    },
+    {
+      "index": 8,
+      "removed_pixels": 1356,
+      "before": {
+        "edge_pixels": 1252,
+        "dark_edge_pixels": 13,
+        "dark_edge_ratio": 0.0104
+      },
+      "after": {
+        "edge_pixels": 1214,
+        "dark_edge_pixels": 994,
+        "dark_edge_ratio": 0.8188
+      }
+    },
+    {
+      "index": 9,
+      "removed_pixels": 1590,
+      "before": {
+        "edge_pixels": 1467,
+        "dark_edge_pixels": 15,
+        "dark_edge_ratio": 0.0102
+      },
+      "after": {
+        "edge_pixels": 1450,
+        "dark_edge_pixels": 1184,
+        "dark_edge_ratio": 0.8166
+      }
+    },
+    {
+      "index": 10,
+      "removed_pixels": 1364,
+      "before": {
+        "edge_pixels": 1270,
+        "dark_edge_pixels": 13,
+        "dark_edge_ratio": 0.0102
+      },
+      "after": {
+        "edge_pixels": 1246,
+        "dark_edge_pixels": 1021,
+        "dark_edge_ratio": 0.8194
+      }
+    },
+    {
+      "index": 11,
+      "removed_pixels": 1617,
+      "before": {
+        "edge_pixels": 1496,
+        "dark_edge_pixels": 18,
+        "dark_edge_ratio": 0.012
+      },
+      "after": {
+        "edge_pixels": 1477,
+        "dark_edge_pixels": 1193,
+        "dark_edge_ratio": 0.8077
+      }
+    },
+    {
+      "index": 12,
+      "removed_pixels": 1380,
+      "before": {
+        "edge_pixels": 1300,
+        "dark_edge_pixels": 21,
+        "dark_edge_ratio": 0.0162
+      },
+      "after": {
+        "edge_pixels": 1290,
+        "dark_edge_pixels": 1060,
+        "dark_edge_ratio": 0.8217
+      }
+    },
+    {
+      "index": 13,
+      "removed_pixels": 1643,
+      "before": {
+        "edge_pixels": 1515,
+        "dark_edge_pixels": 16,
+        "dark_edge_ratio": 0.0106
+      },
+      "after": {
+        "edge_pixels": 1503,
+        "dark_edge_pixels": 1235,
+        "dark_edge_ratio": 0.8217
+      }
+    },
+    {
+      "index": 14,
+      "removed_pixels": 1387,
+      "before": {
+        "edge_pixels": 1302,
+        "dark_edge_pixels": 24,
+        "dark_edge_ratio": 0.0184
+      },
+      "after": {
+        "edge_pixels": 1309,
+        "dark_edge_pixels": 1078,
+        "dark_edge_ratio": 0.8235
+      }
+    },
+    {
+      "index": 15,
+      "removed_pixels": 1596,
+      "before": {
+        "edge_pixels": 1506,
+        "dark_edge_pixels": 20,
+        "dark_edge_ratio": 0.0133
+      },
+      "after": {
+        "edge_pixels": 1499,
+        "dark_edge_pixels": 1224,
+        "dark_edge_ratio": 0.8165
+      }
+    },
+    {
+      "index": 16,
+      "removed_pixels": 1360,
+      "before": {
+        "edge_pixels": 1293,
+        "dark_edge_pixels": 15,
+        "dark_edge_ratio": 0.0116
+      },
+      "after": {
+        "edge_pixels": 1286,
+        "dark_edge_pixels": 1036,
+        "dark_edge_ratio": 0.8056
+      }
+    }
+  ]
+}
