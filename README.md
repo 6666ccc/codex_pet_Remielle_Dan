@@ -38,7 +38,7 @@ Codex v2 自定义宠物图集规定每个标准动作只能使用固定的 8 �
 将 `codex-pet/` 中的文件复制到：
 
 ```text
-%USERPROFILE%\\.codex\\pets\\xingyu\\
+%USERPROFILE%\\.codex\\pets\\
 ```
 
 然后重启 Codex。该宠物使用 v2 图集格式（8 列 × 11 行，1536 × 2288）。
