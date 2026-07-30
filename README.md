@@ -2,6 +2,14 @@
 
 基于原始 GIF 图源制作的 Codex v2 自定义宠物「星羽」。角色形象保留粉发、星形发饰、小翅膀与设备道具。
 
+## 状态映射
+
+- 普通状态（idle）：`待机中.gif`
+- 需要输入（waiting）：`待机.gif`
+- 运行中（running）：`修改文件.gif`
+- 就绪（review）：`完成.gif`
+- 阻塞（failed）：独立制作的 8 帧失败/阻塞动画
+
 ## 内容
 
 - `codex-pet/`：可直接安装的 Codex 宠物包，含 `pet.json` 与 `spritesheet.webp`。
