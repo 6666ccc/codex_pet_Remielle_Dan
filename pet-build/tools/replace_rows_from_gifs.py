@@ -143,18 +143,20 @@ def extract_even(path: Path, take: int) -> list[Image.Image]:
     return [all_frames[i] for i in sample_indices(len(all_frames), take)]
 
 
-def replace_four_rows(run_dir: Path) -> None:
+def replace_status_rows(run_dir: Path) -> None:
     refs = run_dir / "references"
     frames_root = run_dir / "frames"
 
+    # Codex status mapping requested by the user:
+    # idle    -> 待机中.gif (reference-06.gif)
+    # waiting -> 待机.gif   (reference-05.gif)
+    # running -> 修改文件.gif (reference-01.gif)
+    # review  -> 完成.gif   (reference-03.gif)
+    # failed  -> keep the independently generated 8-frame blocked animation.
     write_row(extract_even(refs / "reference-06.gif", 6), frames_root / "idle")
     write_row(extract_even(refs / "reference-05.gif", 6), frames_root / "waiting")
     write_row(extract_even(refs / "reference-03.gif", 6), frames_root / "review")
-
-    # Keep the active-task row as one continuous writing loop.  Mixing the
-    # thinking GIF with the writing GIF makes the six fixed Codex slots jump
-    # halfway through playback.
-    write_row(extract_even(refs / "reference-02.gif", 6), frames_root / "running", stable=True)
+    write_row(extract_even(refs / "reference-01.gif", 6), frames_root / "running", stable=True)
 
 
 ROW_SPECS = {
@@ -374,7 +376,7 @@ def main() -> None:
         print(f"backed up {backup}")
 
     if not args.skip_extract:
-        replace_four_rows(run_dir)
+        replace_status_rows(run_dir)
 
     rebuild_atlases(run_dir, backup if backup.exists() else old_extended)
     write_extended_manifest(
