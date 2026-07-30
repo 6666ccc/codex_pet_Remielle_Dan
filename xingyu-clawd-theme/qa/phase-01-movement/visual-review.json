@@ -1,0 +1,12 @@
+{
+  "visual_qa": "pass",
+  "qa_note": "黑底与灰底均无可见绿青残边；左右动画均为16帧、每帧110ms、无限循环，方向正确，角色身份稳定，中心与基线无退化。",
+  "repair_needed": "无",
+  "reviewed_artifacts": [
+    "final-qa/movement-edge-review.png",
+    "final-qa/movement-contact-sheet.png",
+    "../../assets/roam.gif",
+    "../../assets/drag-left.gif",
+    "final-qa/metrics.json"
+  ]
+}

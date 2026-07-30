@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "policy": "single deterministic pass, no regeneration",
+  "theme_version": "0.5.1",
+  "deployment": "complete",
+  "installed_hash_match": true,
+  "algorithm": {
+    "name": "transparent-boundary light-matte removal",
+    "luminance_threshold": 140,
+    "passes": 2,
+    "neighborhood": "3x3"
+  },
+  "assets": {
+    "idle-loop.gif": {
+      "frames": 61,
+      "durations_ms": [60, 70],
+      "average_dark_edge_ratio_before": 0.017,
+      "average_dark_edge_ratio_after": 0.845,
+      "sha256": "f917bd61ad8cdd2e823a9e668f68e3b7210abd3203d1ff89d9ff469a16863389"
+    },
+    "thinking.gif": {
+      "frames": 41,
+      "durations_ms": [60, 70],
+      "average_dark_edge_ratio_before": 0.013,
+      "average_dark_edge_ratio_after": 0.833,
+      "sha256": "fd23e1129441685a3792e421557fe48c1cc0c3e14a9343340c68937ab5efb45f"
+    },
+    "editing.gif": {
+      "frames": 17,
+      "durations_ms": [60, 70],
+      "average_dark_edge_ratio_before": 0.011,
+      "average_dark_edge_ratio_after": 0.809,
+      "sha256": "0ee1c07f583a74a7c965e27392bc197a557ec0a89a09cc423d74833907e33fee"
+    }
+  }
+}
