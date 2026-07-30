@@ -44,7 +44,6 @@ Codex v2 自定义宠物图集规定每个标准动作只能使用固定的 8 �
 然后重启 Codex。该宠物使用 v2 图集格式（8 列 × 11 行，1536 × 2288）。
 
 或者，请复制以下内容交给 Codex：
-
 请阅读并下载 [codex_pet_Remielle_Dan](https://github.com/6666ccc/codex_pet_Remielle_Dan) 项目，然后将其应用到 Codex 的宠物系统中。
 
 本项目所有图源均依据官方开源 GIF 开发，不收取任何费用；如有侵权，请联系我们告知。
