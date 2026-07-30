@@ -28,4 +28,3 @@ Backdrop and production constraints:
 - No cast shadow, floor shadow, speed line, motion trail, blur, dust, glow or detached effect.
 - Do not use `#00FF00` in the character.
 - The sheet must be a clean square 4×4 layout suitable for deterministic equal-cell extraction.
-
