@@ -29,6 +29,22 @@
 | 源码 vs 产物 | 双轨：开源代码与思路；产物进 `packages/`，并打包到 Release |
 | 目录布局 | 同仓 `source/` + `packages/` |
 | 未提交改动 | 以可运行满意状态为准，先修配置/资产一致性再重组 |
+| 公开标识 | **禁止出现 `xingyu`**；统一为 `Remielle_Dan` |
+
+## Naming: `xingyu` → `Remielle_Dan`
+
+开源主树、README、安装路径、配置 id、Release 文件名中**不得再出现** `xingyu`（含 `xingyu-clawd-theme`、`xingyu-pet-run`、`.codex/pets/xingyu` 等）。统一标识：
+
+| 用途 | 新名称 |
+| --- | --- |
+| Codex `pet.json` 的 `id` | `Remielle_Dan` |
+| Codex 安装目录 | `%USERPROFILE%\.codex\pets\Remielle_Dan\` |
+| Clawd 主题包目录 | `packages/Remielle_Dan-clawd-theme/` |
+| Clawd 安装目录 | `%APPDATA%\clawd-on-desk\themes\Remielle_Dan-clawd-theme\` |
+| Codex 产物包目录 | `packages/Remielle_Dan-codex-pet/` |
+| Release zip | `Remielle_Dan-codex-pet-vX.Y.Z.zip`、`Remielle_Dan-clawd-theme-vX.Y.Z.zip` |
+
+历史本地路径（如旧 `xingyu-pet-run`）只允许出现在已忽略的 QA JSON 绝对路径里；迁入 `docs/` / `source/` 的说明文必须改写为新路径。验收时对公开文件做 `xingyu` 字符串扫描（大小写不敏感），命中则失败。
 
 ## Target tree
 
@@ -53,8 +69,8 @@
       generated/README.md    # 说明生成物；大体量图默认不入仓
       notes/                 # 短笔记；完整计划见 docs/design/
   packages/
-    codex-pet/               # pet.json + spritesheet.webp
-    xingyu-clawd-theme/      # theme.json + assets/ (+ 精简 README)
+    Remielle_Dan-codex-pet/          # pet.json + spritesheet.webp
+    Remielle_Dan-clawd-theme/        # theme.json + assets/ (+ 精简 README)
   scripts/
     package-release.ps1
   preview/
@@ -67,18 +83,18 @@
 
 | 现状 | 去向 |
 | --- | --- |
-| `codex-pet/` | `packages/codex-pet/` |
-| `xingyu-clawd-theme/theme.json` + `assets/` | `packages/xingyu-clawd-theme/` |
+| `codex-pet/` | `packages/Remielle_Dan-codex-pet/`（并改 `pet.json` 的 `id`） |
+| `xingyu-clawd-theme/theme.json` + `assets/` | `packages/Remielle_Dan-clawd-theme/` |
 | `xingyu-clawd-theme/tools/` | `source/clawd/tools/` |
-| `xingyu-clawd-theme/README.md` | `packages/xingyu-clawd-theme/README.md`（精简） |
+| `xingyu-clawd-theme/README.md` | `packages/Remielle_Dan-clawd-theme/README.md`（精简，去 `xingyu`） |
 | `pet-build/prompts`、`tools`、`references` | `source/codex/` |
 | `source-images/` | 并入 `source/codex/references/`（去重） |
-| `CLAWD_ANIMATION_PLAN.md` | `docs/design/clawd-animation-plan.md`，并更新文内路径 |
-| `codex-pet.html` | `preview/codex-pet.html` |
-| 父目录有价值的设计文 | 拷入仓库 `docs/` |
+| `CLAWD_ANIMATION_PLAN.md` | `docs/design/clawd-animation-plan.md`，并更新文内路径为新名 |
+| `codex-pet.html` | `preview/codex-pet.html`（若内含旧 id/路径则一并改） |
+| 父目录有价值的设计文 | 拷入仓库 `docs/`（改写旧名） |
 | `qa/` 大图、`generated/` 大体量源图、`__pycache__` | `.gitignore`；用 README/notes 说明本地重建 |
 
-Git 根目录保持现有仓库根（本地名可仍为 `codex蕾米埃尔/`）；不强制重命名本地文件夹。
+Git 根目录保持现有仓库根（本地名可仍为 `codex蕾米埃尔/`）；不强制重命名本地文件夹。远程仓库名 `codex_pet_Remielle_Dan` 已符合命名，无需改 remote。
 
 ## Runnable alignment (before move)
 
@@ -94,7 +110,7 @@ Git 根目录保持现有仓库根（本地名可仍为 `codex蕾米埃尔/`）�
 
 1. `yawning` / `dozing` / `collapsing` / `sleeping` / `waking` 均指向现有 `sleeping.gif`。
 2. `reactions.annoyed`：无独立资产时移除该反应配置，或在 README 标为暂缓；不以缺失文件留下断引用。
-3. `scripts/package-release.ps1` 与整理验收必须校验：`theme.json` 引用的每个文件在 `assets/` 中存在；`packages/codex-pet/` 含 `pet.json` 与 `spritesheet.webp`。
+3. `scripts/package-release.ps1` 与整理验收必须校验：`theme.json` 引用的每个文件在 `assets/` 中存在；`packages/Remielle_Dan-codex-pet/` 含 `pet.json` 与 `spritesheet.webp`；公开树无 `xingyu` 字样。
 
 对齐后将 `theme.json` 的 `version` **patch bump 为 `0.5.2`**（配置去断引用、睡眠链复用 `sleeping.gif`；无新美术也需让安装者可区分）。README 与打包脚本均以该版本为准。
 
@@ -103,7 +119,7 @@ Git 根目录保持现有仓库根（本地名可仍为 `codex蕾米埃尔/`）�
 根 `README.md` 大纲：
 
 1. 项目简介（一句话 + Codex / Clawd 双平台表）
-2. 快速安装（`packages/` 路径 + Release zip）
+2. 快速安装（`packages/Remielle_Dan-*` 路径 + Release zip；Codex → `.codex/pets/Remielle_Dan/`）
 3. 仓库结构（`source/` vs `packages/`）
 4. **Codex：动画行与触发说明**
 5. **Clawd on Desk：GIF 与触发逻辑**
@@ -128,7 +144,7 @@ Codex 产物为 8×11 精灵图，不是每状态独立 GIF。表为状态行 �
 | 8 | `review` | 结果就绪或审阅输出 |
 | 9–10 | look 16 向 | 视线跟随（顺时针 16 方向） |
 
-说明：安装产物在 `packages/codex-pet/`；构建过程在 `source/codex/`。
+说明：安装产物在 `packages/Remielle_Dan-codex-pet/`；构建过程在 `source/codex/`。
 
 ### Clawd on Desk trigger table
 
@@ -149,7 +165,7 @@ Codex 产物为 8×11 精灵图，不是每状态独立 GIF。表为状态行 �
 
 表下用短列表标明暂缓能力，并链到 `docs/`，避免 README 声称未交付功能。
 
-`packages/xingyu-clawd-theme/README.md` 仅保留安装说明 + 触发表精简版。
+`packages/Remielle_Dan-clawd-theme/README.md` 仅保留安装说明 + 触发表精简版。
 
 ## License and contributing
 
@@ -164,8 +180,8 @@ Codex 产物为 8×11 精灵图，不是每状态独立 GIF。表为状态行 �
 1. 校验 Clawd `theme.json` 引用完整性。
 2. 校验 Codex 包必需文件。
 3. 输出到 `dist-release/`（gitignore）：
-   - `codex-pet-Remielle-vX.Y.Z.zip`
-   - `xingyu-clawd-theme-vX.Y.Z.zip`
+   - `Remielle_Dan-codex-pet-vX.Y.Z.zip`
+   - `Remielle_Dan-clawd-theme-vX.Y.Z.zip`
 4. 版本号：Clawd 读 `theme.json` 的 `version`；Codex 与同一 Release tag 对齐（或在脚本参数中传入 tag）。
 
 维护者手动创建 GitHub Release 并上传上述 zip。README 安装区优先写 Release，并保留从 `packages/` 复制的说明。
@@ -185,3 +201,4 @@ Codex 产物为 8×11 精灵图，不是每状态独立 GIF。表为状态行 �
 - `theme.json` 无断引用；打包脚本在资产缺失时失败退出。
 - LICENSE 为 CC BY-NC 4.0，版权声明与投诉渠道完整。
 - 运行打包脚本可得到两个可上传 Release 的 zip。
+- 公开主树（README、packages、source 说明、docs、scripts、preview）扫描不到 `xingyu`；安装路径与 `pet.json` id 均为 `Remielle_Dan`。
