@@ -1,7 +1,0 @@
-{
-  "visual_qa": "pass",
-  "qa_note": "16帧、每帧140ms、无限循环；散卡连续归拢成堆并送入右侧插槽，随后自然恢复散卡，工具全程在手，语义明确且身份、基线、透明边缘和裁切均通过。",
-  "repair_needed": "none",
-  "approved_asset": "approved/sweeping.gif",
-  "sha256": "df9d71faa5feea7d47f55e77b6764871e79d60a5792069731e39afa665e5be14"
-}

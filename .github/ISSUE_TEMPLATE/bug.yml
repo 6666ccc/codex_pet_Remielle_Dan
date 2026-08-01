@@ -1,0 +1,27 @@
+name: Bug report
+description: 安装或播放异常
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台
+      options:
+        - Codex
+        - Clawd on Desk
+        - Both / 不确定
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 现象
+      description: 期望行为与实际行为
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 主题 / 包版本
+      placeholder: "例如 0.5.2"

@@ -1,7 +1,0 @@
-{
-  "visual_qa": "pass",
-  "qa_note": "16帧、每帧130ms、无限循环；角色身份一致，中心与基线稳定；举手并展示带铃铛图标的设备，审批/等待输入语义明确；首尾衔接可接受，黑灰底无绿青残边、裁切、文字、网格或漂浮特效。",
-  "repair_needed": "none",
-  "approved_asset": "approved/notification.gif",
-  "sha256": "bcb04b0f3b9c83ac95e7286424c33dfb02aa5f5a61b54e0ad3a584c915dfd150"
-}

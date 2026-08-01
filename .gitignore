@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# Release packaging output
+dist-release/
+*.zip
+
+# Local QA / generated bulk (keep README stubs)
+source/clawd/generated/**
+!source/clawd/generated/README.md
+**/qa/
+**/before-*.gif
+**/__pycache__/
