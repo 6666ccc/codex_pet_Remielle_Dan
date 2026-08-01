@@ -11,7 +11,6 @@ OUTPUT = ROOT / "qa" / "theme-contact-sheet.png"
 MOTION_OUTPUT = ROOT / "qa" / "motion-samples.png"
 FILES = [
     "idle-loop.gif",
-    "idle-reading.gif",
     "thinking.gif",
     "editing.gif",
     "notification.gif",
@@ -21,8 +20,6 @@ FILES = [
     "roam.gif",
     "drag-left.gif",
     "drag-right.gif",
-    "react-double.gif",
-    "react-annoyed.gif",
 ]
 
 
@@ -60,7 +57,7 @@ def main() -> None:
     motion_files = [
         "roam.gif",
         "drag-left.gif",
-        "idle-reading.gif",
+        "error.gif",
         "notification.gif",
         "carrying.gif",
     ]

@@ -109,27 +109,8 @@ def build_error_animation() -> None:
 
 def main() -> None:
     ASSETS.mkdir(parents=True, exist_ok=True)
-    with Image.open(ATLAS_PATH) as opened:
-        atlas = opened.convert("RGBA")
-
-    waving = atlas_row(atlas, 3, 4)
-    jumping = atlas_row(atlas, 4, 5)
-    failed = atlas_row(atlas, 5, 8)
-
-    # Locomotion is built by build_movement_animations.py. Keeping it out of
-    # this mixed-purpose rebuild prevents later phases from overwriting the
-    # approved movement timing, registration, or click-reaction assets.
-    save_gif(
-        "react-double.gif",
-        jumping,
-        [130, 130, 130, 160, 280],
-    )
-    save_gif(
-        "react-annoyed.gif",
-        failed,
-        [150, 150, 170, 180, 180, 170, 150, 260],
-    )
-
+    # Locomotion is built by build_movement_animations.py.
+    # Double-click / annoyed reactions are deferred; do not regenerate those assets.
     if ERROR_SOURCE.exists():
         build_error_animation()
 

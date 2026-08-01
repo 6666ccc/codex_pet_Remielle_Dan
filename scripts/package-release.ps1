@@ -50,8 +50,7 @@ $scanRoots = @(
   (Join-Path $Root 'packages'),
   (Join-Path $Root 'source'),
   (Join-Path $Root 'preview'),
-  (Join-Path $Root 'README.md'),
-  (Join-Path $Root 'CONTRIBUTING.md')
+  (Join-Path $Root 'scripts')
 )
 $publicHits = @()
 foreach ($rootPath in $scanRoots) {

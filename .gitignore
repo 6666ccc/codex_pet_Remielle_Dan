@@ -13,9 +13,8 @@ desktop.ini
 dist-release/
 *.zip
 
-# Local QA / generated bulk (keep README stubs)
-source/clawd/generated/**
-!source/clawd/generated/README.md
+# Local QA / generated bulk
+source/clawd/generated/
 **/qa/
 **/before-*.gif
 **/__pycache__/

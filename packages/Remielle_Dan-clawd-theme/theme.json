@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "蕾米埃尔 · Clawd",
   "author": "刘畅",
-  "version": "0.5.2",
+  "version": "0.5.4",
   "description": "包含高帧状态、随机待机与入睡流程的 Clawd on Desk 主题。",
   "viewBox": {
     "x": 0,
@@ -72,7 +72,7 @@
   },
   "idleAnimations": [
     {
-      "file": "idle-reading.gif",
+      "file": "error.gif",
       "duration": 10000
     }
   ],
@@ -81,12 +81,6 @@
       "file": "roam.gif",
       "fileLeft": "drag-left.gif",
       "fileRight": "drag-right.gif"
-    },
-    "double": {
-      "files": [
-        "react-double.gif"
-      ],
-      "duration": 2800
     }
   },
   "timings": {
