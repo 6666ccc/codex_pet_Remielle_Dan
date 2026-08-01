@@ -2,11 +2,21 @@
   "schemaVersion": 1,
   "name": "蕾米埃尔 · Clawd",
   "author": "刘畅",
-  "version": "0.5.1",
-  "description": "包含高帧状态、随机待机与更新检查动画的 Clawd on Desk 主题。",
-  "viewBox": { "x": 0, "y": 0, "width": 120, "height": 120 },
+  "version": "0.5.2",
+  "description": "包含高帧状态、随机待机与入睡流程的 Clawd on Desk 主题。",
+  "viewBox": {
+    "x": 0,
+    "y": 0,
+    "width": 120,
+    "height": 120
+  },
   "layout": {
-    "contentBox": { "x": 8, "y": 5, "width": 104, "height": 110 },
+    "contentBox": {
+      "x": 8,
+      "y": 5,
+      "width": 104,
+      "height": 110
+    },
     "centerX": 60,
     "baselineY": 111,
     "visibleHeightRatio": 0.72,
@@ -20,54 +30,78 @@
     "mode": "full"
   },
   "states": {
-    "idle": ["idle-loop.gif"],
-    "thinking": ["thinking.gif"],
-    "working": ["editing.gif"],
-    "roam": ["roam.gif"],
-    "yawning": ["yawning.gif"],
-    "dozing": ["dozing.gif"],
-    "collapsing": ["collapsing.gif"],
-    "attention": ["attention.gif"],
-    "notification": ["notification.gif"],
-    "sweeping": ["sweeping.gif"],
-    "carrying": ["carrying.gif"],
-    "error": ["error.gif"],
-    "sleeping": ["sleeping.gif"],
-    "waking": ["waking.gif"]
+    "idle": [
+      "idle-loop.gif"
+    ],
+    "thinking": [
+      "thinking.gif"
+    ],
+    "working": [
+      "editing.gif"
+    ],
+    "roam": [
+      "roam.gif"
+    ],
+    "yawning": [
+      "sleeping.gif"
+    ],
+    "dozing": [
+      "sleeping.gif"
+    ],
+    "collapsing": [
+      "sleeping.gif"
+    ],
+    "attention": [
+      "attention.gif"
+    ],
+    "notification": [
+      "notification.gif"
+    ],
+    "carrying": [
+      "carrying.gif"
+    ],
+    "error": [
+      "error.gif"
+    ],
+    "sleeping": [
+      "sleeping.gif"
+    ],
+    "waking": [
+      "sleeping.gif"
+    ]
   },
   "idleAnimations": [
-    { "file": "idle-look.gif", "duration": 6500 },
-    { "file": "idle-reading.gif", "duration": 10000 }
+    {
+      "file": "idle-reading.gif",
+      "duration": 10000
+    }
   ],
-  "updateVisuals": {
-    "checking": "update-checking.gif"
-  },
   "reactions": {
     "drag": {
       "file": "roam.gif",
       "fileLeft": "drag-left.gif",
       "fileRight": "drag-right.gif"
     },
-    "clickLeft": { "file": "click-left.gif", "duration": 2400 },
-    "clickRight": { "file": "click-right.gif", "duration": 2400 },
-    "annoyed": { "file": "react-annoyed.gif", "duration": 3000 },
-    "double": { "files": ["react-double.gif"], "duration": 2800 }
+    "double": {
+      "files": [
+        "react-double.gif"
+      ],
+      "duration": 2800
+    }
   },
   "timings": {
     "minDisplay": {
       "notification": 5000,
-      "sweeping": 5500,
       "carrying": 3000
     },
     "autoReturn": {
       "notification": 5000,
-      "sweeping": 300000,
       "carrying": 3000
     },
     "mouseIdleTimeout": 20000,
     "mouseSleepTimeout": 60000,
-    "yawnDuration": 1800,
-    "wakeDuration": 1500
+    "yawnDuration": 1680,
+    "wakeDuration": 1680
   },
   "displayHintMap": {
     "file-editing": "editing.gif"
@@ -76,10 +110,22 @@
     "petTint": false
   },
   "hitBoxes": {
-    "default": { "x": 8, "y": 5, "w": 104, "h": 110 },
-    "sleeping": { "x": 8, "y": 5, "w": 104, "h": 110 }
+    "default": {
+      "x": 8,
+      "y": 5,
+      "w": 104,
+      "h": 110
+    },
+    "sleeping": {
+      "x": 8,
+      "y": 5,
+      "w": 104,
+      "h": 110
+    }
   },
-  "sleepingHitboxFiles": ["sleeping.gif"],
+  "sleepingHitboxFiles": [
+    "sleeping.gif"
+  ],
   "miniMode": {
     "supported": false
   }
