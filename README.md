@@ -5,7 +5,6 @@
 <h1 align="center">蕾米埃尔 · Remielle Dan</h1>
 
 <p align="center">
-  一个会陪你写代码、思考和等待的粉色小天使。
   <br />
   同时提供 Codex v2 宠物包与 Clawd on Desk 动态主题。
 </p>
@@ -50,11 +49,6 @@
       <sub>有新消息需要你注意</sub>
     </td>
     <td align="center">
-      <img src="packages/Remielle_Dan-clawd-theme/assets/carrying.gif" width="140" alt="搬运" /><br />
-      <strong>搬运 · Carrying</strong><br />
-      <sub>执行搬运或整理任务</sub>
-    </td>
-    <td align="center">
       <img src="packages/Remielle_Dan-clawd-theme/assets/error.gif" width="140" alt="错误" /><br />
       <strong>错误 · Error</strong><br />
       <sub>发现问题时的反馈动画</sub>
@@ -73,7 +67,7 @@
 
 # 蕾米埃尔宠物
 
-基于官方公开发布的 GIF 素材制作的自定义宠物「蕾米埃尔」。角色保留粉色头发、星形发饰、小翅膀和设备道具等主要外观特征。
+基于官方公开发布的 GIF 素材制作的自定义宠物「蕾米埃尔」。
 
 本仓库同时提供两套相互独立、可以共存的资源：
 
@@ -103,7 +97,6 @@
 
 - 使用 `spriteVersionNumber: 2` 的 1536×2288 图集。
 - 包含 9 组标准状态动画和 16 个视线方向。
-- 已映射待机、移动、挥手、跳跃、失败、等待、工作和检查等状态。
 
 ### Clawd on Desk
 
