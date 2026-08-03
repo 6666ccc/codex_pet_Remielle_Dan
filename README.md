@@ -52,11 +52,6 @@
       <sub>有新消息需要你注意</sub>
     </td>
     <td align="center">
-      <img src="packages/Remielle_Dan-clawd-theme/assets/carrying.gif" width="140" alt="搬运" /><br />
-      <strong>搬运 · Carrying</strong><br />
-      <sub>执行搬运或整理任务</sub>
-    </td>
-    <td align="center">
       <img src="packages/Remielle_Dan-clawd-theme/assets/error.gif" width="140" alt="错误" /><br />
       <strong>错误 · Error</strong><br />
       <sub>发现问题时的反馈动画</sub>
