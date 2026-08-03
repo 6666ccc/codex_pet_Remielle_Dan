@@ -5,7 +5,6 @@
 <h1 align="center">蕾米埃尔 · Remielle Dan</h1>
 
 <p align="center">
-  一个会陪你写代码、思考和等待的粉色小天使。
   <br />
   同时提供 Codex v2 宠物包与 Clawd on Desk 动态主题。
 </p>
