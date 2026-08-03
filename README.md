@@ -5,6 +5,7 @@
 <h1 align="center">蕾米埃尔 · Remielle Dan</h1>
 
 <p align="center">
+  一个会陪你写代码、思考和等待的粉色小天使。
   <br />
   同时提供 Codex v2 宠物包与 Clawd on Desk 动态主题。
 </p>
@@ -23,8 +24,6 @@
 </p>
 
 ## 动态预览
-
-所有预览图都直接引用仓库内的 GIF。打开 GitHub 仓库页面即可看到自动播放的动画。
 
 <table>
   <tr>
@@ -72,86 +71,29 @@
 
 <p align="center"><sub>向左拖拽 · 向右拖拽 · roam 漫游动画</sub></p>
 
-## 你将得到什么
+# 蕾米埃尔宠物
 
-| 资源 | 用途 | 关键规格 |
-| --- | --- | --- |
-| [`Remielle_Dan-codex-pet/`](packages/Remielle_Dan-codex-pet/) | 安装到 Codex 桌面端 | `spriteVersionNumber: 2`、8 × 11 精灵图、1536 × 2288 |
-| [`Remielle_Dan-clawd-theme/`](packages/Remielle_Dan-clawd-theme/) | 安装到 Clawd on Desk | 10 个 GIF、状态映射、拖拽反馈、睡眠流程 |
-| [`preview/codex-pet.html`](preview/codex-pet.html) | 本地查看 Codex 动作 | 支持点击切换 6 组参考动画 |
+基于官方公开发布的 GIF 素材制作的自定义宠物「蕾米埃尔」。角色保留粉色头发、星形发饰、小翅膀和设备道具等主要外观特征。
 
-## 安装
+本仓库同时提供两套相互独立、可以共存的资源：
 
-### Codex v2 宠物包
-
-将 [`packages/Remielle_Dan-codex-pet/`](packages/Remielle_Dan-codex-pet/) 中的 `pet.json` 与 `spritesheet.webp` 放入 Codex 的宠物目录，并确保两个文件位于同一层级：
-
-```text
-%USERPROFILE%\.codex\pets\Remielle_Dan\
-├── pet.json
-└── spritesheet.webp
-```
-
-完成后完全退出并重新启动 Codex。
-
-### Clawd on Desk 主题
-
-将 [`packages/Remielle_Dan-clawd-theme/`](packages/Remielle_Dan-clawd-theme/) 整个目录复制到 Clawd on Desk 的主题目录：
-
-```text
-%APPDATA%\clawd-on-desk\themes\Remielle_Dan-clawd-theme\
-├── theme.json
-└── assets\
-    ├── idle-loop.gif
-    ├── thinking.gif
-    ├── editing.gif
-    └── ...
-```
-
-重新启动 Clawd on Desk，然后在「设置 → Theme」中选择蕾米埃尔主题。
-
-## 状态映射
-
-Clawd 主题把桌面状态映射到独立的动图资源：
-
-| 状态 | 动画 | 触发场景 |
-| --- | --- | --- |
-| `idle` | `idle-loop.gif` | 默认待机 |
-| `thinking` | `thinking.gif` | 思考或等待结果 |
-| `working` | `editing.gif` | 编辑文件 |
-| `roam` | `roam.gif` | 自主漫游 |
-| `attention` / `notification` | `attention.gif` / `notification.gif` | 提醒或新通知 |
-| `carrying` | `carrying.gif` | 拖拽或搬运 |
-| `error` | `error.gif` | 任务异常 |
-| `drag` | `drag-left.gif` / `drag-right.gif` | 向左或向右拖拽 |
-
-## 两个版本的动画差异
-
-Codex v2 图集规定每个标准动作使用固定帧数，因此需要从原始高帧 GIF 中选取代表帧。Codex 版本更适合其内置宠物状态系统，但单个动作的动画帧数和节奏会受到精灵图规格限制。
-
-Clawd on Desk 支持每个状态引用独立 GIF，因此可以保留更多原始帧，并为提醒、搬运、随机待机、工作状态和完整睡眠流程提供单独动画。
+| 使用平台 | 可安装资源 | 动画形式 | 入口 |
+| --- | --- | --- | --- |
+| Codex | Codex v2 宠物包 | 8×11 精灵图，标准动作固定 8 帧 | [`packages/Remielle_Dan-codex-pet/`](packages/Remielle_Dan-codex-pet/) |
+| Clawd on Desk | 自定义主题 v0.5.5 | 独立高帧 GIF 与状态动画 | [`packages/Remielle_Dan-clawd-theme/`](packages/Remielle_Dan-clawd-theme/) |
 
 ## 项目结构
 
-```text
-.
-├── packages/
-│   ├── Remielle_Dan-codex-pet/       # Codex v2 宠物包
-│   └── Remielle_Dan-clawd-theme/     # Clawd on Desk 主题与 GIF
-├── preview/codex-pet.html             # Codex 动画本地预览
-├── source/codex/                      # 精灵图帧、参考 GIF 与构建素材
-└── scripts/                           # 打包与发布脚本
-```
-
 ### Codex 资源
 
-- [`packages/Remielle_Dan-codex-pet/`](packages/Remielle_Dan-codex-pet/)：可直接安装的 Codex v2 宠物包，包含 `pet.json`、`spritesheet.webp` 与验证结果。
-- `source/codex/frames/`：精灵图的动作帧，包括待机、移动、挥手、跳跃、失败、等待、工作和检查等状态。
-- `source/codex/references/`：制作过程中使用的原始 GIF、参考图和布局指南。
+- [`packages/Remielle_Dan-codex-pet/`](packages/Remielle_Dan-codex-pet/)：可直接安装的 Codex 宠物包，包含 `pet.json` 和 `spritesheet.webp`。
+- `source/codex/`：Codex v2 宠物的完整构建素材，包括动作帧、提示词、质量检查结果和参考图。
+- `source/codex/references/`：制作过程中使用的原始 GIF 素材与参考图。
+- [`preview/codex-pet.html`](preview/codex-pet.html)：用于查看 Codex 宠物动画的本地预览页面。
 
 ### Clawd on Desk 资源
 
-- [`packages/Remielle_Dan-clawd-theme/theme.json`](packages/Remielle_Dan-clawd-theme/theme.json)：Clawd on Desk 主题配置，当前版本为 `0.5.5`。
+- [`packages/Remielle_Dan-clawd-theme/theme.json`](packages/Remielle_Dan-clawd-theme/theme.json)：Clawd on Desk 主题配置。
 - [`packages/Remielle_Dan-clawd-theme/assets/`](packages/Remielle_Dan-clawd-theme/assets/)：可直接运行的 GIF 动画资源。
 - `source/clawd/tools/`：移动动画、单动作、睡眠流程和接触表等构建工具。
 
@@ -159,37 +101,72 @@ Clawd on Desk 支持每个状态引用独立 GIF，因此可以保留更多原�
 
 ### Codex
 
-- 使用 `spriteVersionNumber: 2` 的 8 × 11 精灵图，尺寸为 1536 × 2288。
-- 包含待机、移动、挥手、跳跃、失败、等待、工作和检查等标准状态。
-- 支持 16 个视线方向，并通过 `validation.json` 对透明边缘和图集单元进行检查。
+- 使用 `spriteVersionNumber: 2` 的 1536×2288 图集。
+- 包含 9 组标准状态动画和 16 个视线方向。
+- 已映射待机、移动、挥手、跳跃、失败、等待、工作和检查等状态。
 
 ### Clawd on Desk
 
-- 保留待机、思考和编辑状态的独立高帧 GIF 动画。
-- 提供左右拖拽、漫游、提醒、错误、搬运和通知反馈。
-- 支持随机待机、工作状态、睡眠与唤醒等桌面陪伴流程。
+- 保留待机、思考和编辑状态的原始高帧节奏。
+- 提供 16 帧、110ms/帧的左右移动动画。
+- 提供独立的提醒、错误、上下文整理和工作树搬运动作。
+- 提供随机张望、随机阅读和检查更新动画。
+- 提供打哈欠、犯困、倒下、睡眠和醒来的完整入睡流程。
+- 提供基础拖拽、点击、双击和 annoyed 反应。
 - 主题当前版本为 `0.5.5`。
 
-## 本地预览
+## 安装
 
-在仓库根目录运行一个静态文件服务器：
+### 安装到 Codex
 
-```powershell
-python -m http.server 8000
+将 [`packages/Remielle_Dan-codex-pet/`](packages/Remielle_Dan-codex-pet/) 中的 `pet.json` 和 `spritesheet.webp` 复制到：
+
+```text
+%USERPROFILE%\.codex\pets\Remielle_Dan\
 ```
 
-然后打开 <http://localhost:8000/preview/codex-pet.html>，点击宠物或按钮切换动作。
+复制完成后，完全退出并重新启动 Codex。
 
-## 已知行为
+也可以将下面的内容发送给 Codex，让它协助安装：
 
-部分 Codex 桌面版本在任务刚开始运行时不会立刻刷新悬浮宠物动画。可以将鼠标移入宠物区域后再移出，或收起并重新唤出宠物，让桌面端重新同步状态；这属于桌面端状态刷新行为，不是资源包的精灵图错误。
+> 请阅读并下载 [codex_pet_Remielle_Dan](https://github.com/6666ccc/codex_pet_Remielle_Dan) 项目，将 `packages/Remielle_Dan-codex-pet/` 中的 `pet.json` 和 `spritesheet.webp` 安装到 `%USERPROFILE%\.codex\pets\Remielle_Dan\`，验证文件完整后告诉我是否需要重启 Codex。
+
+### 安装到 Clawd on Desk
+
+将整个 [`packages/Remielle_Dan-clawd-theme/`](packages/Remielle_Dan-clawd-theme/) 目录复制到：
+
+```text
+%APPDATA%\clawd-on-desk\themes\Remielle_Dan-clawd-theme\
+```
+
+重新启动 Clawd on Desk，然后在“设置 → Theme”中选择“蕾米埃尔 · Clawd”。
+
+## 两个版本的动画差异
+
+Codex v2 图集规定每个标准动作使用固定帧数，因此需要从原始高帧 GIF 中选取代表帧。Codex 版本更适合其内置宠物状态系统，但动画流畅度可能低于原始素材。
+
+Clawd on Desk 支持每个状态引用独立 GIF，因此可以保留更多原始帧，并为提醒、清扫、搬运、随机待机、更新检查和完整睡眠流程提供单独动画。
+
+## Codex 已知问题
+
+在 Codex 桌面端 `26.721.4979.0` 中，任务开始运行后，浮动宠物窗口有时仍会继续显示普通待机动作；将鼠标移入宠物区域后再移出，窗口才会刷新为正确的运行中动作。
+
+该现象可能与 Codex 桌面端 `avatarOverlay` 的任务状态订阅或重新渲染有关，并非本宠物包的状态映射或精灵图错误。临时可以：
+
+- 将鼠标移入宠物区域后再移出。
+- 收起宠物，然后重新唤出。
+- 完全退出并重新启动 Codex。
+- 等待 Codex 桌面端后续版本改进浮动窗口的状态刷新机制。
 
 ## 素材与版权
 
-本项目中的角色形象、原始 GIF 与相关素材版权归原作者或相应权利人所有。本仓库仅用于个人学习、技术研究与非商业交流，不主张拥有原始角色形象或素材的所有权。
+本项目使用的图像素材基于官方公开发布的 GIF 制作，仅供个人学习、技术研究及非商业交流使用，不收取任何费用。
 
-如果你认为仓库中的内容侵犯了合法权益，请通过 [Issue](https://github.com/6666ccc/codex_pet_Remielle_Dan/issues) 或 [邮件](mailto:liuchang12322@outlook.com) 联系维护者。收到通知后会及时核实并妥善处理。
+原始角色形象及相关素材的著作权归原作者或相应权利人所有。本项目不主张对原始角色形象或相关素材拥有所有权。
 
-<p align="center">
-  <sub>Made with care for a calmer coding desk · Remielle Dan</sub>
-</p>
+如果您认为本项目中的内容侵犯了您的合法权益，请提供必要的权属说明并通过以下任一方式联系维护者：
+
+- 在本仓库提交 [Issue](https://github.com/6666ccc/codex_pet_Remielle_Dan/issues)
+- 发送邮件至 [liuchang12322@outlook.com](mailto:liuchang12322@outlook.com)
+
+收到通知后，项目维护者将及时核实并妥善处理。改进建议、使用反馈或新想法也欢迎通过 Issue 或电子邮件交流。
